@@ -5,12 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Google Fonts-->
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;1,700,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;1,700,900&display=swap"
+    rel="stylesheet">
 
 
   <!-- Font Awesome icon library-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
-  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
 
   <title>Nate's Todo App</title>
 </head>
@@ -25,12 +27,19 @@
     <button class="todo-button" type="submit">
       <i class="far fa-plus-square plus-button"></i>
     </button>
+    <div class="select">
+      <select name="todos" class="filter-todo">
+          <option value="all">All</option>
+          <option value="Complete">Complete</option>
+          <option value="Uncomplete">Uncomplete</option>
+      </select>
+    </div>
   </form>
 
-  
+
   <div class="todo-container">
     <ul class="todo-list">
-      
+
     </ul>
   </div>
 
