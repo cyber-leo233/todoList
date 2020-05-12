@@ -6,9 +6,11 @@
 
 body {
   background-image: linear-gradient(to right,#f6d365,#fda085);
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Merriweather', sans-serif;
   min-height: 100vh;
   padding:0 1rem;
+  font-weight: 300;
+
 }
 
 header,form {
@@ -17,9 +19,13 @@ header,form {
   margin-bottom: 1.5em;
 
 }
+
 h1 {
   border-bottom: 3px dashed;
   padding-bottom: 1rem;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 header,form {
   min-height: 20vh;
@@ -40,6 +46,7 @@ form input, form button {
   background: #fff;
   width: 40%;
   max-width: 800px;
+  font-family: "Merriweather",sans-serif;
   
 }
 
@@ -86,7 +93,7 @@ form button:hover {
   justify-content: space-between;
   align-items: center;
   font-size:1.5rem;
-  transition: all 1s ease;
+  transition: all .5s ease;
   
 }
 
@@ -119,6 +126,10 @@ form button:hover {
     text-decoration: line-through;
     opacity: .5;
 
+  }
+  .fall {
+     transform: translateY(8rem) rotateZ(20deg);
+     opacity: 0;
   }
   .fa-trash, .fa-check {
     pointer-events: none;
