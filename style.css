@@ -38,7 +38,7 @@ form input, form button {
   font-size: 1.5rem;
   border:none;
   background: #fff;
-  width: 60%;
+  width: 40%;
   max-width: 800px;
   
 }
@@ -86,6 +86,7 @@ form button:hover {
   justify-content: space-between;
   align-items: center;
   font-size:1.5rem;
+  transition: all 1s ease;
   
 }
 
@@ -112,6 +113,12 @@ form button:hover {
 }
   .complete-btn {
     background-color:rgb(73, 204,73);
+  }
+/* line thru item and lowered opacity when checked item is clicked */
+  .completed {
+    text-decoration: line-through;
+    opacity: .5;
+
   }
   .fa-trash, .fa-check {
     pointer-events: none;
