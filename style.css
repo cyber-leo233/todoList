@@ -23,6 +23,7 @@ header,form {
   text-align: center;
   overflow: hidden;
   margin:0 auto 1em auto;
+  position: relative;
   
 
 
@@ -70,7 +71,11 @@ select {
   
 }
 .select {
- width:100px;
+
+ position: fixed;
+ bottom:50%;
+ right:15px;
+ 
   
 }
 /*Parent div*/
