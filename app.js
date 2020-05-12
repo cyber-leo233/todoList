@@ -66,8 +66,12 @@ function deleteCheck (e) {
 //when clicking in the ul section this is looking for when the trash button is clicked
   if (item.classList[0] === "trash-btn") {
       const todo = item.parentElement;
+      //ANimation
       todo.classList.add('fall');
-      // todo.remove();
+      todo.addEventListener('transitionend',function (){
+          todo.remove();
+      });
+      
       
   }
   //check mark
