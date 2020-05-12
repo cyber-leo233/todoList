@@ -48,7 +48,6 @@ form button {
   background:white;
   cursor: pointer;
   width: 10%;
-  padding-right:.75em;
   transition: all 0.3s ease;
 }
 form button:hover {
@@ -140,6 +139,7 @@ form button:hover {
     form button {
       width: 10%;
       margin:0 auto;
+      padding-right:1.75em;
       
     }
     .trash-btn,.complete-btn {
