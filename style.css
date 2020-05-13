@@ -34,16 +34,15 @@ h1 {
   line-height: 1.2;
   letter-spacing: 1px;
   text-transform: uppercase;
+  
 }
-
-
 
 form input, form button {
   padding:0.75rem;
   font-size: 1.5rem;
   border:none;
   background: #fff;
-  width: 40%;
+  width: 55%;
   max-width: 800px;
   font-family: "Merriweather",sans-serif;
   
@@ -65,13 +64,15 @@ form button:hover {
 /* This is the div containing the select element 
 moves dropdown/centers */
 .select {
-
-  position: fixed;
-  left:50%;
-  top:100px;
-  transform: translate(-50%);
+  margin: 1rem;
+  position:fixed;
+  left:25px;
+  top:50px;
   
+
  }
+
+ /*button on dropdown */
  .select::after {
    content: "\25BC";
    background-color: #ff6f47;
@@ -80,7 +81,12 @@ moves dropdown/centers */
    transform: translateY(20%);
    pointer-events: none;
    right:0px;
+   transition: background-color,color 1s ease;
   
+ }
+ .select:hover::after {
+   background-color:#404040;
+   color:#fff;
  }
 
 select {
@@ -89,16 +95,9 @@ select {
  appearance: none;
  outline:none;
  border:none;
- width: 200px;
- height:25px;
- cursor: pointer;
- 
+
 }
-@media (max-width:375px) {
-  .select {
-    top:125px;
-  }
-}
+
 
 
 
@@ -137,13 +136,17 @@ select {
   transition: all 1s ease;
   
 }
+.todo > * {
+  height: 50px;
+}
 
 
 /* LI item */
 .todo-item {
   
   flex:1;
-  padding:0rem .5rem;
+  padding:1rem 0;
+  overflow: hidden;
  
 
 }
@@ -176,8 +179,11 @@ select {
     pointer-events: none;
   }
 
-  @media screen and (max-width:525px) {
-
+  @media screen and (max-width:600px) {
+    body {
+      background-image: linear-gradient(-125deg,#f6d365 10%,#eb7f04);
+      padding:0;
+    }
 
     header h1 {
       font-size: 2.5rem;
@@ -197,8 +203,19 @@ select {
     .trash-btn,.complete-btn {
       padding:.5rem;
     }
+    .todo {
+      margin:1em 0;
+    }
+    
+    .todo-item {
+    
+      text-align: left;
+      
+    }
     .todo-list {
       width: 100%;
+      margin:0;
+      padding:0;
     }
    
   }
