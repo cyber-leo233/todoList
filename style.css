@@ -24,13 +24,12 @@ header,form {
   overflow: hidden;
   margin:0 auto 1em auto;
   position: relative;
-  
-
 
 }
 
+
 h1 {
-  border-bottom: 3px dashed;
+  
   padding-bottom: 1rem;
   line-height: 1.2;
   letter-spacing: 1px;
@@ -62,22 +61,47 @@ form button:hover {
   color:white;
   background: #fda085;
 }
+
+/* This is the div containing the select element 
+moves dropdown/centers */
+.select {
+
+  position: fixed;
+  left:50%;
+  top:100px;
+  transform: translate(-50%);
+  
+ }
+ .select::after {
+   content: "\25BC";
+   background-color: #ff6f47;
+   position: absolute;
+   height: 25px;
+   transform: translateY(20%);
+   pointer-events: none;
+   right:0px;
+  
+ }
+
 select {
  -webkit-appearance: none;
  -moz-appearance: none;
  appearance: none;
  outline:none;
  border:none;
-  
-}
-.select {
-
- position: fixed;
- bottom:50%;
- right:15px;
+ width: 200px;
+ height:25px;
+ cursor: pointer;
  
-  
 }
+@media (max-width:375px) {
+  .select {
+    top:125px;
+  }
+}
+
+
+
 /*Parent div*/
 .todo-container {
   display: flex;
