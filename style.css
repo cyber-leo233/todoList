@@ -61,7 +61,7 @@ form button {
   position: absolute;
   border: none;
   right:0;
-  top:0;
+  top:17px;
   font-size: 1.5rem;
 }
 form button:hover,form button:focus {
