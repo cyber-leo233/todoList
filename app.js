@@ -4,12 +4,6 @@ const todoInput = document.querySelector('.todo-input'); //input field
 const todoButton = document.querySelector('.todo-button'); //plus/add button
 const todoList =  document.querySelector('.todo-list'); //ul
 const filterOption = document.querySelector('.filter-todo');//stores the select element
-const edit = document.createAttribute("contenteditable");
-edit.value = "true";
-
-
-
-
 
 
 //Event Listeners
@@ -31,13 +25,19 @@ function addTodo (event) {
 
     //create li item to go in the div
     const newTodo =  document.createElement('li');
+  
+
     //makes li editable
+  
+    const edit = document.createAttribute("contenteditable");
+    edit.value = "true";
     newTodo.setAttributeNode(edit);
     
     
-    
+  
     // the li gets the text from the user input box
     newTodo.innerText = todoInput.value;
+    
     newTodo.classList.add('todo-item');
 
     //adds the li that was created to the todo div
